@@ -31,4 +31,6 @@
 2. Usage
    - Open your project folder and go to the terminal and activate your virtual environment. Then type ````streamlit run src\main.py```` and the app will open in your web 
    browser. Now you can interact with it or play with the code and add your own features and if you wish - you can deploy your own version of MLify on heroku.
-  
+
+>**Note:** When specifying the path to images or any other resource in the source code - please note that the slashes used can be different based on the IDE/TextEditor you are
+           using. Hence, refactor accordingly.
