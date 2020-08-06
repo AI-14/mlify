@@ -188,7 +188,7 @@ def ml(df):
         y_pred_train = model.predict(x_train)
         st.success(f'Train accuracy = {accuracy_score(y_train, y_pred_train)*100:.5f}%')
         st.success(f'Test accuracy = {accuracy_score(y_test, y_pred_test)*100:.5f}%')
-        if st.checkbox('Show Confusion Matrix'):
+        if st.button('Show Confusion Matrix'):
             cf_matrix = confusion_matrix(y_test, y_pred_test)
             sns.heatmap(cf_matrix, annot=True)
             st.pyplot()
