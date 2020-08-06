@@ -83,7 +83,7 @@ def vis(df):
             time.sleep(3)
         df.target.value_counts().plot.pie(autopct='%1.2f%%')
         st.pyplot()
-    if st.button('Scatter Plot'):
+    if st.checkbox('Scatter Plot'):
         x_val = st.selectbox('Select a column for x-axis', df.columns)
         y_val = st.selectbox('Select a column for y-axis', df.columns)
         with st.spinner('Generating A Scatter Plot...'):
