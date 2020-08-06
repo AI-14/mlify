@@ -16,13 +16,13 @@ def main():
     Returns: 
             Nothing
     '''
-    title = codecs.open('src\\markdowns\\title.md', 'r', 'utf-8')
+    title = codecs.open('src//markdowns//title.md', 'r', 'utf-8')
     st.markdown(title.read(), unsafe_allow_html=True)
    
     navigation = init_sidebar_content()
 
     if navigation == 'Home':
-        homepage = codecs.open('src\\markdowns\\homepage.md', 'r', 'utf-8')
+        homepage = codecs.open('src//markdowns//homepage.md', 'r', 'utf-8')
         st.write('\n\n')
         st.markdown(homepage.read(), unsafe_allow_html=True)
     elif navigation == 'Activity Mode':
@@ -43,7 +43,7 @@ def main():
         if activity_mode == 'Fully Automatic Pandas Profiling':
             pandas_profiling(df)
     elif navigation == 'About':
-        aboutpage = codecs.open('src\\markdowns\\aboutpage.md', 'r', 'utf-8')
+        aboutpage = codecs.open('src//markdowns//aboutpage.md', 'r', 'utf-8')
         st.write('\n\n')
         st.markdown(aboutpage.read(), unsafe_allow_html=True)
         st.write('\n\n')
