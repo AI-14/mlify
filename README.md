@@ -7,9 +7,9 @@
 
 ## Description
    MLify is a simple semi-autoML web application designed for those who are beginners in the field of machine learning and have no coding experience. With this app, they can 
-   now perform EDA, visualize graphs/charts, and run over 5 different ML algorithms on various datasets that we have provided. There is also an option of automated EDA - which can 
-   save a lot of time. Furthermore, it can also be used for educational purposes by university instructors. The app is deployed on heroku platform and to check it out, click on 
-   the website link under *Web App Link*.
+   now perform EDA, visualize graphs/charts, and run over 5 different ML algorithms on various datasets that we have provided. There is also an option of automated EDA - which
+   can save a lot of time. Furthermore, it can also be used for educational purposes by university instructors. The app is deployed on heroku platform and to check it out, click
+   on the website link under *Web App Link*.
    
 ## Web App Link
 Coming soon..
@@ -20,5 +20,15 @@ Coming soon..
 ![](/res/readme_res/Pic2.png)
 
 ![](/res/readme_res/Pic3.png)
-  
+
+## Installation And Usage
+1. Installation
+   - Download/clone this repository and create a proper project folder where you will extract this repo's contents. Then open terminal (make sure you are in the project's directory).
+   - Create a virtual environment using the command ````py -m venv yourVenvName```` and activate it using ````yourVenvName\Scripts\activate.bat````.
+   - Then run the following command ````pip install -r requirements.txt````. With this, all the dependencies will be installed in your virtual environment. 
+> **Note:** *If any dependency is missing or an error shows up, install it using ````pip install moduleName````*.
+
+2. Usage
+   - Open your project folder and go to the terminal and activate your virtual environment. Then type ````streamlit run src\main.py```` and the app will open in your web 
+   browser. Now you can interact with it or play with the code and add your own features and if you wish - you can deploy your own version of Mlify on heroku.
   
