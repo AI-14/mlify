@@ -63,27 +63,27 @@ def vis(df):
     Returns: 
            Nothing. 
     '''
-    if st.checkbox("Correlational Matrix"):
+    if st.button("Correlational Matrix"):
         with st.spinner('Generating A Correlational Matrix...'):
             time.sleep(3)
         sns.heatmap(df.corr(), annot=True)
         st.pyplot()
-    if st.checkbox("Value Counts"):
+    if st.button("Value Counts"):
         with st.spinner('Generating A Value Count Plot...'):
             time.sleep(3)
         df.target.value_counts().plot(kind='barh')
         st.pyplot()
-    if st.checkbox("Pair Plot"):
+    if st.button("Pair Plot"):
         with st.spinner('Generating A Pair Plot...'):
             time.sleep(3)
         sns.pairplot(df, hue='target')
         st.pyplot()
-    if st.checkbox("Pie Chart"):
+    if st.button("Pie Chart"):
         with st.spinner('Generating A Pie Chart...'):
             time.sleep(3)
         df.target.value_counts().plot.pie(autopct='%1.2f%%')
         st.pyplot()
-    if st.checkbox('Scatter Plot'):
+    if st.button('Scatter Plot'):
         x_val = st.selectbox('Select a column for x-axis', df.columns)
         y_val = st.selectbox('Select a column for y-axis', df.columns)
         with st.spinner('Generating A Scatter Plot...'):
@@ -131,21 +131,21 @@ def ml(df):
             C = st.slider(label='Choose C', min_value=0.1, max_value=5.0)
             log_reg = clf.logistic_regression(C)
             train_and_display_metrics(log_reg)
-            if st.button('KFold Cross Validation'):
+            if st.checkbox('KFold Cross Validation'):
                 run_kfold(log_reg) 
         elif model_name == 'K Nearest Neighbors':
             st.image('res//images//KNN.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
             n_neighbors = st.number_input(label='n_neighbors', min_value=5, max_value=100)
             knn = clf.k_nearest_neighbors(n_neighbors)
             train_and_display_metrics(knn)
-            if st.button('KFold Cross Validation'):
+            if st.checkbox('KFold Cross Validation'):
                 run_kfold(knn)
             st.info('NOTE: It is often a good practice to scale the features when using KNN because it uses Eucledian distances. However, this topic comes under feature engineering (intermediate level).')
         elif model_name == 'Naive Bayes (Gaussian)':
             st.image('res//images//NaiveBayes.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
             nbg = clf.naive_bayes()
             train_and_display_metrics(nbg)
-            if st.button('KFold Cross Validation'):
+            if st.checkbox('KFold Cross Validation'):
                 run_kfold(nbg)
         elif model_name == 'SVM':
             st.image('res//images//SVM1.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
@@ -154,14 +154,14 @@ def ml(df):
             kernel = st.selectbox('Kernel', ['rbf', 'poly', 'linear'])
             svm = clf.svm(C, kernel)
             train_and_display_metrics(svm)
-            if st.button('KFold Cross Validation'):
+            if st.checkbox('KFold Cross Validation'):
                 run_kfold(svm) 
         elif model_name == 'Decision Tree':
             st.image('res//images//DecisionTree.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
             max_depth = st.number_input(label='max_depth', min_value=10, max_value=100)
             dt = clf.decision_tree(max_depth)
             train_and_display_metrics(dt)
-            if st.button('KFold Cross Validation'):
+            if st.checkbox('KFold Cross Validation'):
                 run_kfold(dt) 
         elif model_name == 'Random Forest':
             st.image('res//images//RandomForest.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
@@ -169,7 +169,7 @@ def ml(df):
             max_depth = st.number_input(label='max_depth', min_value=10, max_value=100)
             rf = clf.random_forest(n_estimators, max_depth)
             train_and_display_metrics(rf)
-            if st.button('KFold Cross Validation'):
+            if st.checkbox('KFold Cross Validation'):
                 run_kfold(rf) 
 
     def train_and_display_metrics(model):
@@ -188,7 +188,7 @@ def ml(df):
         y_pred_train = model.predict(x_train)
         st.success(f'Train accuracy = {accuracy_score(y_train, y_pred_train)*100:.5f}%')
         st.success(f'Test accuracy = {accuracy_score(y_test, y_pred_test)*100:.5f}%')
-        if st.button('Show Confusion Matrix'):
+        if st.checkbox('Show Confusion Matrix'):
             cf_matrix = confusion_matrix(y_test, y_pred_test)
             sns.heatmap(cf_matrix, annot=True)
             st.pyplot()
