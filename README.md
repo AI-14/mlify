@@ -12,7 +12,7 @@
    on the website link under *Web App Link*.
    
 ## Web App Link
-Coming soon..
+[MLify](https://mlify.herokuapp.com/)
 
 ## Screenshots Of The App
 ![](/res/readme_res/Pic1.png)
