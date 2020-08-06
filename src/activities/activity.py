@@ -134,7 +134,7 @@ def ml(df):
             if st.button('KFold Cross Validation'):
                 run_kfold(log_reg) 
         elif model_name == 'K Nearest Neighbors':
-            st.image('res\\images\\KNN.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
+            st.image('res//images//KNN.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
             n_neighbors = st.number_input(label='n_neighbors', min_value=5, max_value=100)
             knn = clf.k_nearest_neighbors(n_neighbors)
             train_and_display_metrics(knn)
@@ -142,7 +142,7 @@ def ml(df):
                 run_kfold(knn)
             st.info('NOTE: It is often a good practice to scale the features when using KNN because it uses Eucledian distances. However, this topic comes under feature engineering (intermediate level).')
         elif model_name == 'Naive Bayes (Gaussian)':
-            st.image('res\\images\\NaiveBayes.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
+            st.image('res//images//NaiveBayes.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
             nbg = clf.naive_bayes()
             train_and_display_metrics(nbg)
             if st.button('KFold Cross Validation'):
