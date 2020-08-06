@@ -116,7 +116,7 @@ def ml(df):
                 Nothing.
         '''
         if model_name == 'Linear Regression':
-            st.image('res\\images\\LinearRegression.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
+            st.image('res//images//LinearRegression.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
             lin_reg = clf.linear_regression()
             lin_reg.fit(x_train, y_train)
             coeff = lin_reg.coef_
@@ -127,7 +127,7 @@ def ml(df):
             st.write('and plugin the features and compare the value you get with the actual target value.')
             st.info('NOTE: Linear Regression is not for classification problems. Hence, use it for Boston Houses or Diabetes dataset to understand this algorithm deeply.')
         elif model_name == 'Logistic Regression':
-            st.image('res\\images\\LogisticRegression.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
+            st.image('res//images//LogisticRegression.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
             C = st.slider(label='Choose C', min_value=0.1, max_value=5.0)
             log_reg = clf.logistic_regression(C)
             train_and_display_metrics(log_reg)
@@ -148,8 +148,8 @@ def ml(df):
             if st.button('KFold Cross Validation'):
                 run_kfold(nbg)
         elif model_name == 'SVM':
-            st.image('res\\images\\SVM1.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
-            st.image('res\\images\\SVM2.png', caption='Mathematical Concept (Kernel). Source: Google Images', width=600, format='PNG')
+            st.image('res//images//SVM1.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
+            st.image('res//images//SVM2.png', caption='Mathematical Concept (Kernel). Source: Google Images', width=600, format='PNG')
             C = st.slider(label='Choose C', min_value=0.1, max_value=5.0)
             kernel = st.selectbox('Kernel', ['rbf', 'poly', 'linear'])
             svm = clf.svm(C, kernel)
@@ -157,14 +157,14 @@ def ml(df):
             if st.button('KFold Cross Validation'):
                 run_kfold(svm) 
         elif model_name == 'Decision Tree':
-            st.image('res\\images\\DecisionTree.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
+            st.image('res//images//DecisionTree.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
             max_depth = st.number_input(label='max_depth', min_value=10, max_value=100)
             dt = clf.decision_tree(max_depth)
             train_and_display_metrics(dt)
             if st.button('KFold Cross Validation'):
                 run_kfold(dt) 
         elif model_name == 'Random Forest':
-            st.image('res\\images\\RandomForest.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
+            st.image('res//images//RandomForest.png', caption='Mathematical Concept. Source: Google Images', width=600, format='PNG')
             n_estimators = st.number_input('n_estimators', min_value=100, max_value=1000)
             max_depth = st.number_input(label='max_depth', min_value=10, max_value=100)
             rf = clf.random_forest(n_estimators, max_depth)
