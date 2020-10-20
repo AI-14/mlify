@@ -1,7 +1,7 @@
 # Importing libraries.
 import streamlit as st
 import codecs
-from activities.activity import init_sidebar_content, eda, vis, ml, pandas_profiling
+from activities.activity import init_sidebar_content, eda, vis, ml
 from models.ml_models_datasets import MLDataset
 
 # Main method.
