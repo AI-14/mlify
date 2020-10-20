@@ -48,7 +48,6 @@ numba==0.50.1
 numpy==1.19.1
 packaging==20.4
 pandas==1.1.0
-pandas-profiling==2.8.0
 pandocfilters==1.4.2
 parso==0.7.1
 pathtools==0.1.2
@@ -78,7 +77,6 @@ Send2Trash==1.5.0
 six==1.15.0
 sklearn==0.0
 streamlit==0.64.0
-streamlit-pandas-profiling==0.0.4
 tangled-up-in-unicode==0.0.6
 terminado==0.8.3
 testpath==0.4.4
