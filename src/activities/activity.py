@@ -1,8 +1,6 @@
 # Importing libraries.
 import time
 import streamlit as st
-from pandas_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
@@ -223,17 +221,4 @@ def ml(df):
     model_name = st.selectbox("Choose a model/algorithm", ["Linear Regression", "Logistic Regression", "K Nearest Neighbors", "Naive Bayes (Gaussian)", "SVM", "Decision Tree", "Random Forest"])
     run_ml_model(model_name)
    
-def pandas_profiling(df):
-    '''
-    Description: 
-            Method for generating pandas profile.
-            
-    Parameters: 
-            df - A pandas dataframe.
-    
-    Returns: 
-            Nothing.
-    '''
-    if st.button('Generate Report'):
-        profile = ProfileReport(df)
-        st_profile_report(profile)
+
