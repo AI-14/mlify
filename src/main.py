@@ -26,7 +26,7 @@ def main():
         st.write('\n\n')
         st.markdown(homepage.read(), unsafe_allow_html=True)
     elif navigation == 'Activity Mode':
-        activity_mode = st.sidebar.selectbox("Choose an activity", ["Exploratory Data Analysis", "Visualization", "Machine Learning Models", 'Fully Automatic Pandas Profiling'])
+        activity_mode = st.sidebar.selectbox("Choose an activity", ["Exploratory Data Analysis", "Visualization", "Machine Learning Models"])
         st.write('\n\n')
         
         # Dataset selection.
@@ -40,8 +40,7 @@ def main():
             vis(df)
         if activity_mode == 'Machine Learning Models':
             ml(df)
-        if activity_mode == 'Fully Automatic Pandas Profiling':
-            pandas_profiling(df)
+            
     elif navigation == 'About':
         aboutpage = codecs.open('src//markdowns//aboutpage.md', 'r', 'utf-8')
         st.write('\n\n')
