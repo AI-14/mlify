@@ -12,10 +12,6 @@ field of machine learning:
 - <p style=color:#2d7ccc;font-size:20px>Visualization</p>
 - <p style=color:#2d7ccc;font-size:20px>Machine Learning Models</p>
 
-<p style=color:#2d7ccc;font-size:20px>
-An additional feature is also included for fully automated EDA called Pandas Profiling.
-</p>
-
 # How to use the app?
 <p style=color:#2d7ccc;font-size:20px>
 Open the sidebar to navigate the options and start your ML experience!
