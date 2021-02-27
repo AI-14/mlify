@@ -15,13 +15,18 @@
 [MLify Web App Link](https://mlify.herokuapp.com/)
 
 ## Screenshots Of The App
+<details>
+  <summary>Click to expand!</summary>
 ![](/res/readme_res/Pic1.png)
 
 ![](/res/readme_res/Pic2.png)
 
 ![](/res/readme_res/Pic3.png)
+</details>
 
 ## Installation And Usage
+<details>
+  <summary>Click to expand!</summary>
 1. Installation
    - Download/clone this repository. Then open terminal (make sure you are in the project's directory).
    - Create a virtual environment using the command ````py -m venv yourVenvName```` and activate it using ````yourVenvName\Scripts\activate.bat````.
@@ -32,5 +37,5 @@
    - Open your project folder and go to the terminal and activate your virtual environment. Then type ````streamlit run src\main.py```` and the app will open in your web 
    browser. Now you can interact with it or play with the code and add your own features and if you wish - you can deploy your own version of MLify on heroku.
 
->**Note:** When specifying the path to images or any other resource in the source code - please note that the slashes used can be different based on the IDE/TextEditor you are
-           using. Hence, refactor accordingly.
+>**Note:** When specifying the path to images or any other resource in the source code - please note that the slashes used can be different based on the IDE/TextEditor you are using. Hence, refactor accordingly.
+</details>
