@@ -7,9 +7,7 @@
 
 ## Description
    MLify is a simple semi-autoML web application designed for those who are beginners in the field of machine learning and have no coding experience. With this app, they can 
-   now perform EDA, visualize graphs/charts, and run over 5 different ML algorithms on various datasets that we have provided. There is also an option of automated EDA - which
-   can save a lot of time. Furthermore, it can also be used for educational purposes by university instructors. The app is deployed on heroku platform and to check it out, click
-   on the website link under *Web App Link*.
+   now perform EDA, visualize graphs/charts, and run over 5 different ML algorithms on various datasets that we have provided. There is also an option of automated EDA - which can save a lot of time. Furthermore, it can also be used for educational purposes by university instructors. The app is deployed on heroku platform and to check it out, click on the website link under *Web App Link*.
    
 ## Web App Link
 [MLify Web App Link](https://mlify.herokuapp.com/)
@@ -17,7 +15,7 @@
 ## Screenshots Of The App
 <details>
   <summary>Click to expand!</summary>
-
+  
 ![](/res/readme_res/Pic1.png)
 
 ![](/res/readme_res/Pic2.png)
