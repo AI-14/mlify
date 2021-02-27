@@ -17,6 +17,7 @@
 ## Screenshots Of The App
 <details>
   <summary>Click to expand!</summary>
+
 ![](/res/readme_res/Pic1.png)
 
 ![](/res/readme_res/Pic2.png)
@@ -27,6 +28,7 @@
 ## Installation And Usage
 <details>
   <summary>Click to expand!</summary>
+  
 1. Installation
    - Download/clone this repository. Then open terminal (make sure you are in the project's directory).
    - Create a virtual environment using the command ````py -m venv yourVenvName```` and activate it using ````yourVenvName\Scripts\activate.bat````.
