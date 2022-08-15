@@ -15,6 +15,7 @@
 ## Screenshots Of The App
 <details>
   <summary>Click to expand!</summary>
+  <br/>
   
 ![](/res/readme_res/Pic1.png)
 
