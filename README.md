@@ -27,6 +27,7 @@
 ## Installation And Usage
 <details>
   <summary>Click to expand!</summary>
+  <br/>
   
 1. Installation
    - Download/clone this repository. Then open terminal (make sure you are in the project's directory).
