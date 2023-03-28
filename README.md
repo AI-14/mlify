@@ -4,7 +4,7 @@
 ![Sklearn](https://img.shields.io/badge/-Sklearn-1fb30e?style=flat)
 ![Streamlit](https://img.shields.io/badge/-Streamlit-f0806c?style=flat)
 
-# Table of contents
+## Table of contents
 1. [Description](#description)
 2. [Screenshots](#screenshots)
 3. [Installation and Usage](#installation-usage)
